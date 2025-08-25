@@ -1,50 +1,46 @@
-.popular{
+.related-product{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     height: 90vh;
-    margin-top: 60px;
 
+} 
+.related-product hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
 }
-
-.popular h1{
+.related-products h1{
     color: #171717;
     font-size: 50px;
     font-weight: 600;
-    
 }
-
-.popular hr{
-    width: 200px;
-    height: 6px;
-    background: #252525;
-    border-radius: 10px;
-
-}
-.popular-item{
+        
+.related-products-item{
     margin-top: 50px;
     display: flex;
     gap: 30px;
-    
 }
+
 
 
 
 
 @media(max-width: 1280px){
-    .popular{
+    .related-products{
         height: 70vh;
 
     }
-    .popular h1{
+    .related-products h1{
         font-size: 40px;
     }
-    .popular hr{
+    .related-products hr{
         width: 160px;
         height: 4px;
     }
-    .popular-item{
+    .related-products-item{
         gap: 20px;
         margin-top: 30px;
 
@@ -54,18 +50,18 @@
 }
 
 @media(max-width: 1024px){
-    .popular{
+    .related-products{
         height: 60vh;
 
     }
-    .popular h1{
+    .related-products h1{
         font-size: 30px;
     }
-    .popular hr{
+    .related-products hr{
         width: 120px;
         height: 3px;
     }
-    .popular-item{
+    .related-products-item{
         gap: 15px;
         margin-top: 20px;
 
@@ -75,19 +71,19 @@
 }
 
 @media(max-width: 800px){
-    .popular{
+    .related-products{
         height: 50vh;
         gap: 6px;
 
     }
-    .popular h1{
+    .related-products h1{
         font-size: 20px;
     }
-    .popular hr{
+    .related-products hr{
         width: 100px;
        
     }
-    .popular-item{
+    .related-products-item{
         gap: 5px;
         
 
@@ -97,15 +93,15 @@
 }
 
 @media(max-width: 500px){
-    .popular{
+    .related-products{
         height: 90vh;
 
     }
-    .popular h1{
+    .related-products h1{
         font-size: 30px;
     }
     
-    .popular-item{
+    .related-products-item{
       display: grid;
       grid-template-columns: 1fr 1fr ;
       gap: 20px;
