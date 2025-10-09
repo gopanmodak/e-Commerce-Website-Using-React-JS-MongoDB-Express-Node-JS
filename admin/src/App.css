@@ -1,0 +1,30 @@
+/* Overall App layout */
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* Dashboard container: side-by-side on desktop, stacked on mobile */
+.dashboard {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap; /* Stack on smaller screens */
+  justify-content: center;
+  ;
+}
+
+/* AddProduct & ListProduct responsive */
+.addproduct, .listproduct {
+  flex: 1 1 400px; /* Grow, shrink, min 400px */
+  max-width: 600px;
+}
+
+/* Header spacing */
+h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}

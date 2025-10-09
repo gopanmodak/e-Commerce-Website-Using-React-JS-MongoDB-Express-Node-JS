@@ -1,0 +1,55 @@
+.admin {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar section */
+.sidebar {
+  flex-shrink: 0;
+  width: 230px;
+}
+
+/* Main content */
+.admin-content {
+  flex-grow: 1;
+  padding: 40px 50px;
+  margin-left: 230px; /* matches sidebar width */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  transition: 0.3s ease;
+}
+
+/* Scroll behavior */
+.admin-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.admin-content::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.4);
+  border-radius: 10px;
+}
+
+.admin-content::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 116, 139, 0.6);
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .admin {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  .admin-content {
+    margin-left: 0;
+    padding: 25px 20px;
+  }
+}
